@@ -1,4 +1,6 @@
+
 const color = document.getElementById("color");
+alert(document.cookie);
 const target = document.getElementById("result");
 
 function getRandomInt(max) {
