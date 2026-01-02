@@ -1,0 +1,13 @@
+we have to use an old version of a browser to make the flash work , or using ruffer 
+its used on interactive animation but it not used now 
+
+then ive found a tcheck on the code
+if  value = md5 and decoding it gived me this
+  41.....AA
+so am searching about it 
+the password is about 6 digit
+and so i made this table using dcode
+
+
+and ive found some hints to find the real digits 
+and also the swf helps but my method was with pen and paper :)

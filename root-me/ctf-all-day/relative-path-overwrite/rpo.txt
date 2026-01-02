@@ -1,0 +1,7 @@
+this site uses relative paths such as /static/main.js
+and when i use ../ in the link its goes back to main one 
+and its getting all the resorses from upload/static/filename
+and all the uploads are on the /static/uploads/hash/filename
+
+i cheked the dom and i found that on load its gets a main.js 
+lets copy it and add an alert and see what happens
