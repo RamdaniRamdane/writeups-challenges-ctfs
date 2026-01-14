@@ -1,0 +1,1 @@
+search for ftp and u will see the password using wireshark

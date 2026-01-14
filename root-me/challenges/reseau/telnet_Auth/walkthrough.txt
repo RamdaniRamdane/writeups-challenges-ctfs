@@ -1,0 +1,1 @@
+search for telnet and then press analyse > fellow > tcp stream and then u get the password 
