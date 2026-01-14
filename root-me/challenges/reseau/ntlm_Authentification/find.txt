@@ -1,0 +1,11 @@
+see ntlm response
+hash format for ntlmv2 
+USERNAME::DOMAIN:SERVER_CHALLENGE:NT_PROOF_STR:NTLMv2_RESPONSE
+
+username:j*****e
+Domain name: c***l
+NTProofStr: 5**********2 16bytes
+NTLMv2 Response […]:010100************* after 16 bytes 
+NTLM Server Challenge: 19*****b1
+
+rootbeer
