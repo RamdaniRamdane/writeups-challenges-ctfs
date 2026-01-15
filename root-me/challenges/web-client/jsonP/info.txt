@@ -1,0 +1,8 @@
+jsonp p its an abreviation of json with padding
+hint 1:
+<script src="https://www.google.com/complete/search?client=chrome&jsonp=alert(1)"></script> this one works
+for u to find the right way to exfitrate page data 
+hint 2 : 
+use `` 
+encode the html
+use setTimeout (not arrow function)
