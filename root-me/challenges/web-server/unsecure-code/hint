@@ -1,0 +1,6 @@
+dans ce challenge on peux trouver la directory avec du fuzzing mais on a le hint pour git donc j ai 
+directement visite le /.git 
+puis on a le git avec git dumper 
+puis on fait git log 
+puis on show les details du commit volue avec git show id
+

