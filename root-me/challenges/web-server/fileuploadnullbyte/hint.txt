@@ -1,0 +1,2 @@
+the null byte is about adding %00
+

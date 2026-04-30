@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "remote XDebug",
+            "type": "php",
+            "request": "launch",
+            "hostname": "0.0.0.0",
+            "port": 9000,
+            "log": true,
+            "stopOnEntry": true,
+            "pathMappings": {
+                "~/personal_projects/pentest/root-me/challenges/web-server/php-debug/": "${workspaceFolder}"
+            }
+        }
+    ]
+}
