@@ -1,0 +1,3 @@
+input[value^="r"] {
+    background-image: url("https://writeups-challenges-ctfs.onrender.com/web-client/ch62/r");
+}
